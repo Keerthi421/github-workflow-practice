@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indstillinger – ToDo Lite</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="page">
+    <header class="site-header">
+        <h1 class="site-title">
+            ToDo Lite
+        </h1>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li>
+                    <a
+                        class="nav-link"
+                        href="index.html"
+                    >
+                        Min liste
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav-link"
+                        href="profil.html"
+                    >
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav-link"
+                        href="indstillinger.html"
+                    >
+                        Indstillinger
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="settings-section">
+            <h2 class="task-section-title">
+                Indstillinger
+            </h2>
+            <form
+                class="settings-form"
+                data-js-settings-form
+            >
+                <div class="setting-item">
+                    <input
+                        type="checkbox"
+                        id="darkmode"
+                        name="darkmode"
+                    />
+                    <label for="darkmode">
+                        Aktivér mørkt tema
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <input
+                        type="checkbox"
+                        id="show-completed"
+                        name="showCompleted"
+                    />
+                    <label for="show-completed">
+                        Vis færdige opgaver
+                    </label>
+                </div>
+
+                <div class="setting-item">
+                    <input
+                        type="checkbox"
+                        id="confirm-delete"
+                        name="confirmDelete"
+                    />
+                    <label for="confirm-delete">
+                        Bekræft før sletning
+                    </label>
+                </div>
+
+                <label for="priority">
+                    Standardvisning:
+                </label>
+                <select
+                    id="priority"
+                    name="viewFilter"
+                    class="task-input-field"
+                >
+                    <option value="all">
+                        Alle opgaver
+                    </option>
+                    <option value="active">
+                        Kun aktive
+                    </option>
+                    <option value="completed">
+                        Kun færdige
+                    </option>
+                </select>
+
+                <button
+                    type="submit"
+                    class="task-submit-button"
+                >
+                    Gem indstillinger
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-note">
+            &copy; 2025 ToDo Lite
+        </p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min profil – ToDo Lite</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="page">
+    <header class="site-header">
+        <h1 class="site-title">
+            ToDo Lite
+        </h1>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li>
+                    <a
+                        class="nav-link"
+                        href="index.html"
+                    >
+                        Min liste
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav-link"
+                        href="profil.html"
+                    >
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav-link"
+                        href="indstillinger.html"
+                    >
+                        Indstillinger
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="profile-section">
+            <h2 class="task-section-title">
+                Min profil
+            </h2>
+            <div class="profile-info">
+                <p>
+                    <strong>
+                        Brugernavn:
+                    </strong>
+                    <span data-js-username>
+                    </span>
+                </p>
+                <p>
+                    <strong>
+                        Email:
+                    </strong>
+                    <span data-js-email>
+                    </span>
+                </p>
+                <p>
+                    <strong>
+                        Bio:
+                    </strong>
+                </p>
+                <p data-js-bio>
+                </p>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2 class="task-section-title">
+                Rediger profil
+            </h2>
+            <form
+                class="profile-form"
+                data-js-profile-form
+            >
+                <label for="name">
+                    Navn:
+                </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="task-input-field"
+                />
+
+                <label for="email">
+                    Email:
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="task-input-field"
+                />
+
+                <label for="bio">
+                    Bio:
+                </label>
+                <textarea
+                    id="bio"
+                    name="bio"
+                    rows="4"
+                    class="task-input-field"
+                >
+                </textarea>
+
+                <button
+                    type="submit"
+                    class="task-submit-button"
+                >
+                    Gem ændringer
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-note">
+            &copy; 2025 ToDo Lite
+        </p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Lite</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="page">
+    <header class="site-header">
+        <h1 class="site-title">
+            ToDo Lite
+        </h1>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li>
+                    <a
+                        class="nav-link"
+                        href="index.html"
+                    >
+                        Min liste
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav-link"
+                        href="profil.html"
+                    >
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="nav-link"
+                        href="indstillinger.html"
+                    >
+                        Indstillinger
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="task-section">
+            <h2 class="task-section-title">
+                Tilføj opgave
+            </h2>
+            <form
+                class="task-form"
+                data-js-task-form
+            >
+                <input
+                    type="text"
+                    name="task"
+                    class="task-input-field"
+                    placeholder="Skriv en opgave..."
+                    data-js-task-input
+                />
+                <button
+                    type="submit"
+                    class="task-submit-button"
+                >
+                    Tilføj
+                </button>
+            </form>
+        </section>
+
+        <section class="task-section">
+            <h2 class="task-section-title">
+                Dine opgaver
+            </h2>
+            <ul
+                class="task-list"
+                data-js-task-list
+            >
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-note">
+            &copy; 2025 ToDo Lite
+        </p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
