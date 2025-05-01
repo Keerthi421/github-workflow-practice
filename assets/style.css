@@ -1,4 +1,7 @@
 /* Reset og struktur */
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -149,7 +152,17 @@ h1 {
 /* Footer */
 .site-footer {
   text-align: center;
+  color: white;
   margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #666666;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+.site-footer a{
+  color: white;
+  text-decoration: none;
 }
 
 .footer-note {
