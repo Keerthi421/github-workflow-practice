@@ -84,7 +84,7 @@ h1 {
 /* Knappen (fælles) */
 .task-submit-button {
   padding: 0.5rem 1rem;
-  background-color: #3a3f58;
+  background-color: #273680;
   color: white;
   border: none;
   cursor: pointer;
@@ -109,7 +109,7 @@ h1 {
 }
 
 .task-checkbox {
-  accent-color: #3a3f58;
+  accent-color: #273680;
 }
 
 .task-label {
